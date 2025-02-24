@@ -71,7 +71,7 @@ namespace Task_sheduler
 
             if (!DateTime.TryParse(dueDateInput, out DateTime dueDate))
             {
-                Console.WriteLine("Invalid date format.");
+                Console.WriteLine("Invalid date format Type the Correct format.");
                 return;
             }
 
