@@ -26,7 +26,7 @@ namespace Task_sheduler
                 Console.WriteLine("1. Add Task");
                 Console.WriteLine("2. Update Task");
                 Console.WriteLine("3. Delete Task");
-                Console.WriteLine("4. View Sorted Tasks");
+                Console.WriteLine("4. View Tasks");
                 Console.WriteLine("5. Exit");
                 Console.Write("Enter your choice: ");
 
@@ -81,7 +81,7 @@ namespace Task_sheduler
 
             if (!TimeSpan.TryParse(dueTimeInput, out TimeSpan dueTime))
             {
-                Console.WriteLine("Invalid time format.");
+                Console.WriteLine("Invalid time format Type the Correct format.");
                 return;
             }
 
@@ -200,7 +200,7 @@ namespace Task_sheduler
 
                     if (taskTime > now && taskTime <= now.AddMinutes(5))
                     {
-                        Console.WriteLine($"\n⏰ Reminder: Task '{task.Name}' is due at {task.DueDate:yyyy-MM-dd} {task.DueTime:hh\\:mm}");
+                        Console.WriteLine($"\n *Reminder: Task '{task.Name}' is due at {task.DueDate:yyyy-MM-dd & If you need You can Delete the Task *} {task.DueTime:hh\\:mm}");
                     }
                 }
                 Thread.Sleep(30000); // Check every 30 seconds
