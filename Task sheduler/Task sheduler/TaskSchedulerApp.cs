@@ -26,7 +26,7 @@ namespace Task_sheduler
                 Console.WriteLine("1. Add Task");
                 Console.WriteLine("2. Update Task");
                 Console.WriteLine("3. Delete Task");
-                Console.WriteLine("4. View Tasks");
+                Console.WriteLine("4. View Sorted Tasks");
                 Console.WriteLine("5. Exit");
                 Console.Write("Enter your choice: ");
 
