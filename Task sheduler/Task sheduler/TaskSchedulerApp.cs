@@ -200,7 +200,8 @@ namespace Task_sheduler
 
                     if (taskTime > now && taskTime <= now.AddMinutes(5))
                     {
-                        Console.WriteLine($"\n *Reminder: Task '{task.Name}' is due at {task.DueDate:yyyy-MM-dd & If you need You can Delete the Task *} {task.DueTime:hh\\:mm}");
+                        Console.WriteLine($"\n Reminder: Task '{task.Name}' is due at {task.DueDate:yyyy-MM-dd} {task.DueTime:hh\\:mm}  ");
+                        Console.WriteLine(" *** If you need You can Delete the Task ***");
                     }
                 }
                 Thread.Sleep(30000); // Check every 30 seconds
